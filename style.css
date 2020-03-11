@@ -1,3 +1,7 @@
-.header_up .header_up_buttons {
+.header_up {
+    display: flex;
+}
+
+.header_up_buttons {
     display: flex;
 }
