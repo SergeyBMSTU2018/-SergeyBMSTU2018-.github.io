@@ -1,4 +1,3 @@
-.header_up_logo {
-    height: 15px;
-    width: 15px;
+.header_up {
+    display: flex;
 }
