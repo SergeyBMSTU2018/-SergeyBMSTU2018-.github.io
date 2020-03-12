@@ -1,7 +1,88 @@
 .header_up {
-    display: flex;
+    margin-top: 20px;
+    height: 40px;
+
+    border-bottom: 1px solid grey;
 }
 
-.header_up_buttons {
+.header_up_space {
     display: flex;
+    margin: 0 190px;
+}
+
+.header_up_space_logo {
+    margin-top: -5px;
+    flex: 1 0 auto;
+}
+
+.header_up_space_buttons_sign_in {
+    
+    font-size: 15.8px;
+    font-style: normal;
+    color: green;
+}
+
+.header_up_space_buttons_get_sterted {
+    margin-left: 16px;
+    padding: 8px 16px;
+
+    font-size: 15.8px;
+    font-style: normal;
+    color: green;
+
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+
+
+
+
+.header_down {
+    margin-top: 20px;
+    height: 40px;
+
+    border-bottom: 1px solid grey;
+}
+
+.header_down_space {
+    display: flex;
+    margin: 0 190px;
+}
+
+.header_down_space_logo {
+    margin-top: -7px;
+}
+
+.header_down_space_text {
+    margin-left: 15px;
+    font-size: 15px;
+    font-style: normal;
+    color: grey;
+}
+
+.header_down_space_text_1 {
+    margin-left: 10px;
+}
+
+.header_down_space_text_2 {
+    margin-left: 10px;
+}
+
+.header_down_space_text_3 {
+    margin-left: 10px;
+}
+
+.header_down_space_text_4 {
+    margin-left: 10px;
+}
+
+.main {
+    border-bottom: 1px solid grey;
+}
+
+.main_space {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
 }
