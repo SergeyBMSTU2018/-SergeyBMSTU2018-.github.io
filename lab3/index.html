@@ -1,0 +1,72 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8ee5ae06c6.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+    <title>Котики с погодой</title>
+</head>
+<body onload="setWeather()">
+
+    <div class="header">
+        <div class="headerInner">
+            <a href="https://kozievsk.ru/coffee/" class="headerIcon"><i class="fab fa-apple"></i></a>
+            <form onsubmit="setWeather(); return false;">
+                <input class="searchInput" id="search_city" type="text" placeholder="Введите город">
+                <button class="buttondFind"><i class="fas fa-basketball-ball"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="weatherBlock">
+        <div class="weatherBlockInner">
+
+            <div class="currentWeather">
+                <div class="currentWeatherInner">
+
+                    <div class="weatherCityInfo">
+                        <span class="weatherCityInfo" id="country">country</span>
+                        <span class="weatherCityInfo" id="city_name">city_name</span>
+                        <span class="weatherCityInfo" id="timezone">timezone</span>
+                    </div>
+
+                    <div class="weatherCityInfo">Текущая погода в городе</div>
+
+                    <div class="weatherInfo">
+                        <span class="weatherInfo currentTemp" id="temp">temp</span>
+                        <img class="currentIcon" id="icon" src="" alt="icon">
+                        <div>
+                            <span class="weatherInfo" id="description">description</span>
+                            <span class="weatherInfo" id="feels_like">feels_like</span>
+                        </div>
+                    </div>
+
+                    <div class="weatherOptions">
+                        <i class="weatherOptions fas fa-wind"></i>
+                        <span class="weatherOptions" id="wind_speed">wind_speed</span>
+                        <i class="weatherOptions fas fa-tint"></i>
+                        <span class="weatherOptions" id="humidity">humidity</span>
+                        <i class="weatherOptions far fa-compass"></i>
+                        <span class="weatherOptions" id="pressure">pressure</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="weekWeather">
+                <div class="weekWeatherInner" id="week-weather-inner-id">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="cat">
+        <img class="catInner" src="images/kotyata.jpg" alt="Котики">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,317 @@
+/* Общие стили */
+body {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+/* Хедер */
+.header {
+    height: 50px;
+    width: 100%;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.headerInner {
+    height: 100%;
+    width: 70%;
+
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerIcon {
+    font-size: 40px;
+    color: black;
+}
+
+.searchInput {
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 2px 1px lightgray; 
+    border: 1px solid rgb(170, 170, 170);
+
+    font-size: 14px;
+    font-family: Palatino, URW Palladio L, serif;
+}
+
+.buttondFind {
+    height: 25px;
+    width: 25px;
+
+    background-color: rgb(208, 208, 208);
+    box-shadow: inset 1px 1px 2px 1px rgb(200, 185, 185);
+    color: sienna;
+
+    border-radius: 15px;
+    border: 1px solid rgb(203, 203, 203);
+}
+
+.buttondFind:hover {
+    color: blue;
+}
+
+/* 2 центральных блока */
+.weatherBlock {
+    width: 100%;
+    height: 200px;
+
+    margin-bottom: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.weatherBlockInner {
+    width: 73%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Левый блок */
+.currentWeather {
+    width: 40%;
+    height: 200px;
+
+    margin-right: 1%;
+
+    display: flex;
+}
+
+.currentWeatherInner {
+    width: 100%;
+
+    background: url(images/back1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: rgb(97, 238, 104);
+    font-size: 25px;
+
+    border-radius: 10px;
+    box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.weatherInfo {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.currentTemp {
+    font-size: 60px;
+}
+
+.currentIcon {
+    height: 80px;
+}
+
+.weatherOptions {
+    padding-right: 10px;
+}
+
+/* Правый блок */
+.weekWeather {
+    width: 60%;
+    height: 200px;
+
+    display: flex;
+}
+
+.weekWeatherInner {
+    width: 100%;
+    overflow: hidden;
+
+    background: url(images/back2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    color: rgb(48, 28, 177);
+    font-size: 25px;
+
+    border-radius: 10px;
+    box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+}
+
+.weekData {
+    display: flex;
+    height: 100%;
+    overflow: auto;
+    align-items: center;
+}
+
+.hoursInfo {
+    padding-left: 10px;
+    font-size: 20px;
+    min-width: 170px;
+}
+
+.tempIcon {
+    display: flex;
+}
+
+.week_temp {
+    font-size: 50px;
+}
+
+.week_icon {
+    height: 70px;
+}
+
+
+/* Нижний блок */
+.cat {
+    width: 100%;
+    height: 680px; 
+
+    display: flex;
+    justify-content: center;
+}
+
+.catInner {
+    width: 73%;
+
+    border-radius: 10px;
+    box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+/* Настройки скролл-бара */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 5px;
+    background-color:rgb(60, 200, 210)
+}
+    
+::-webkit-scrollbar-thumb:hover{
+    background-color:#56999f;
+}
+    
+::-webkit-scrollbar{
+    width: 1px;
+    height: 12px;
+}
+
+/* Ширина страницы меньше 1600 */
+@media only screen and (max-width: 1600px) {
+    /* Левый блок */
+    .currentWeather {
+        width: 50%;
+    }
+
+    /* Правый блок */
+    .weekWeather {
+        width: 50%;
+    }
+
+    .cat {
+        height: 550px; 
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    /* Левый блок */
+    .currentWeather {
+        width: 60%;
+    }
+
+    /* Правый блок */
+    .weekWeather {
+        width: 40%;
+    }
+
+    .cat {
+        height: 450px; 
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    /* Хедер */
+    .headerInner {
+        width: 85%;
+    }
+
+    /* 2 центральных блока */
+    .weatherBlock {
+        width: 100%;
+        height: 420px;
+    
+        margin-bottom: 20px;
+        
+        display: block;
+        justify-content: auto;
+        align-items: auto;
+    } 
+    
+    .weatherBlockInner {
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: auto;
+        justify-content: auto;
+    }
+
+    /* Верхний блок */
+    .currentWeather {
+        width: 90%;
+        height: 200px;
+    
+        display: flex;
+        justify-content: center;
+
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .currentWeatherInner {
+        font-size: 18px;
+    }
+
+    #temp {
+        font-size: 50px;
+    }
+    
+    #icon {
+        height: 75px;
+    }
+
+    /* Нижний блок */
+    .weekWeather {
+        width: 90%;
+        height: 200px;
+    
+        margin-bottom: 20px;
+    }
+
+    /* Котики */
+    .cat {
+        height: 200px; 
+    }
+
+    .catInner {
+        width: 90%;
+    }
+}
