@@ -1,7 +1,7 @@
 {
-  "name": "site",
+  "name": "Medium_copy",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is my first site(copy of medium site)",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
