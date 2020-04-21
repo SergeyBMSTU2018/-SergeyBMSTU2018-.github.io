@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.Main {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.MainText {
+    color: #00008b;
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+
+.FormFeedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.InputFeedback {
+    height: 18px;
+    width: 200px;
+    
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 2px 1px lightgray; 
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.InputInfo {
+    margin-bottom: 10px;
+    width: 200px;
+
+    font-size: 13px;
+    color: rgb(245, 231, 204);
+    text-shadow: 2px 2px 2px royalblue;
+}
+
+
+.InputFile {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
+} 
+
+.InputFile + label {
+    height: 20px;
+    width: 200px;
+    
+    display: flex;
+    justify-content: center;
+
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: inset 1px 1px 2px 1px lightgray; 
+    border: 1px solid rgb(170, 170, 170);
+
+    margin-bottom: 15px;
+}
+
+.InputFile:focus + label,
+.InputFile + label:hover {
+    background-color: rgb(87, 252, 204)
+}
+
+.InputFile + label {
+	cursor: pointer; 
+}
+
+.SubmitButton {
+    width: 130px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: inset 1px 1px 2px 1px lightgray; 
+    border: 1px solid rgb(170, 170, 170);
+}
+
+@media only screen and (max-width: 410px) {
+    .MainText {
+        font-size: 30px;
+    }
+}
+

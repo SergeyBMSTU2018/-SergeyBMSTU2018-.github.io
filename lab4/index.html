@@ -5,9 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
-    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-storage.js"></script>
+    <script src="app.js"></script>
+    <title>Feedback</title>
 </head>
 <body>
-    
+    <div class="Main">
+        <div class="MainText">Собираем Feedback</div>
+        <form class="FormFeedback" onsubmit="setDataToServer(); return false;">
+            <input class="InputFeedback" id="surname_input" required type="text" pattern="[A-Za-zА-Яа-я]+" maxlength="30" placeholder="Введите фамилию*">
+            <span class="InputInfo">Заглавные и маленькие буквы русского и латинского алфавита</span>
+
+            <input class="InputFeedback" id="name_input" required type="text" pattern="[A-Za-zА-Яа-я]+" maxlength="30" placeholder="Введите имя*">
+            <span class="InputInfo">Заглавные и маленькие буквы русского и латинского алфавита</span>
+
+            <select class="InputFeedback" id="pol_select">
+                <option value="Мужской">Мужской</option>
+                <option value="Женский">Женский</option>
+            </select>
+            <span class="InputInfo">Выберите предложенный вариант</span>
+
+            <input class="InputFeedback" id="phone_input" type="text" pattern="[0-9]{10}" placeholder="Введите телефон">
+            <span class="InputInfo">10 цифр без семерки</span>
+            
+            <input class="InputFile" id="file_input" required type="file">
+
+            <label for="file_input">Выберите файл*</label>
+            <button class="SubmitButton" id="submit_button" type="submit">Отправить</button>
+        </form>
+    </div>
 </body>
-</html>
+</html>   
