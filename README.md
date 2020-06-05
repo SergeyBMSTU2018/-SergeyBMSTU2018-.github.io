@@ -1,9 +1,9 @@
 # Лабораторные работы по курсу JS
 
-**Ссылка по которой можно найти все сайты:** https://sergeybmstu2018.github.io/
+**Ссылка по которой можно найти все сайты:** https://alsergey.github.io/
 
 ### Сайты:
-- Копирования сайта medium: https://sergeybmstu2018.github.io/lab2/
-- Сайт погоды: https://sergeybmstu2018.github.io/lab3/
-- Сбор feedback: https://sergeybmstu2018.github.io/lab4/
-- iConverter: https://sergeybmstu2018.github.io/lab5/build/
+- Копирования сайта medium: https://alsergey.github.io/lab2/
+- Сайт погоды: https://alsergey.github.io/lab3/
+- Сбор feedback: https://alsergey.github.io/lab4/
+- iConverter: https://alsergey.github.io/lab5/build/
