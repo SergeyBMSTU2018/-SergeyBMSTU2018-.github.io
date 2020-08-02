@@ -1,0 +1,128 @@
+.header {
+    height: 50px;
+    width: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.headerInner {
+    height: 100%;
+    width: 50%;
+
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+.headerIcon {
+    font-size: 35px;
+    color: black;
+    margin-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headerText {
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 16px;
+    transform: translate(-50%, -50%)
+}
+
+.headerButton {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.headerSingUp {
+    height: 30px;
+    width: 150px;
+
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(170, 170, 170);
+
+    cursor: pointer;
+}
+
+.headerSingUp:hover {
+    transition-duration: 0.2s;
+
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+
+.headerSingIn {
+    height: 30px;
+    width: 60px;
+    margin-left: 5px;
+
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(170, 170, 170);
+
+    cursor: pointer;
+}
+
+.headerSingIn:hover {
+    transition-duration: 0.2s;
+
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+@media only screen and (max-width: 1250px) {
+    .headerText {
+        font-size: 27px;
+    }
+
+    .headerSingUp {
+        width: 120px;
+        font-size: 11px;
+    }
+
+    .headerSingIn {
+        width: 50px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .headerInner {
+        width: 70%;
+    }
+
+    .headerText {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .headerText {
+        display: none;
+    }
+}

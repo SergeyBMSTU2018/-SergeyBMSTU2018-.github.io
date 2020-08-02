@@ -1,0 +1,158 @@
+.SingUp {
+    height: 325px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.SingUpInner {
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+
+    height: 100%;
+    width: 17%;
+}
+
+.SingUpHeaderText {
+    justify-content: center;
+    display: flex;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+.SingUpErrorText {
+    justify-content: center;
+    display: none;
+
+    margin-bottom: 7px;
+
+    color: red;
+}
+
+.SingUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.InputSingUp {
+    height: 20px;
+    width: 85%;
+
+    margin-bottom: 8px;
+    
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus{
+    outline:none;
+    border: 2px solid rgb(175, 175, 175);
+}
+
+.InputFile {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
+} 
+
+.InputFile + label {
+    height: 20px;
+    width: 85%;
+    
+    display: flex;
+    justify-content: center;
+
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(170, 170, 170);
+
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.InputFile:focus + label,
+.InputFile + label:hover {
+    background-color: rgb(200, 200, 200)
+}
+
+.SubmitButtonSingUp {
+    width: 200px;
+    height: 25px;
+
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(170, 170, 170);
+
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    cursor: pointer; 
+}
+
+.SubmitButtonSingUp:hover {
+    transition-duration: 0.2s;
+
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+@media only screen and (max-width: 1600px) {
+    .SingUpInner {
+        width: 27%;
+    }
+
+    .SingUpHeaderText {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .SingUp {
+        height: 320px;
+    }
+
+    .SingUpInner {
+        width: 35%;
+    }
+
+    .SingUpHeaderText {
+        font-size: 24px;
+    }
+
+    .InputFile + label {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .SingUp {
+        height: 315px;
+    }
+
+    .SingUpInner {
+        width: 70%;
+    }
+
+    .SingUpHeaderText {
+        font-size: 20px;
+    }
+
+
+    .InputFile + label {
+        font-size: 13px;
+    }
+}

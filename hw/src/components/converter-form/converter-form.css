@@ -1,0 +1,114 @@
+.ConverterForm {
+    height: 135px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.ConverterFormInner {
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+
+    height: 100%;
+    width: 17%;
+}
+
+.ConverterHeaderText {
+    justify-content: center;
+    display: flex;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+.InputConverter {
+    height: 40px;
+    width: 90%;
+
+    margin-bottom: 8px;
+    
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+}
+
+input[type=text]:focus {
+    outline:none;
+    border: 2px solid rgb(175, 175, 175);
+}
+
+.ConverterInputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ConvertOption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    width:100%;
+}
+
+.Left {
+    margin-right: 20px;
+}
+
+select {
+    width: 90%;
+    margin-bottom: 5px;
+
+    border-radius: 5px;
+    border: 1px solid rgb(175, 175, 175);
+    background-color: rgb(241, 241, 241);
+}
+
+select:focus {
+    outline:none;
+    border: 1px solid rgb(129, 129, 129);
+}
+
+@media only screen and (max-width: 1600px) {
+    .ConverterFormInner {
+        width: 27%;
+    }
+
+    .ConverterHeaderText {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .ConverterForm {
+        height: 130px;
+    }
+
+    .ConverterFormInner {
+        width: 35%;
+    }
+
+    .ConverterHeaderText {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .ConverterForm {
+        height: 125px;
+    }
+
+    .ConverterFormInner {
+        width: 70%;
+    }
+
+    .ConverterHeaderText {
+        font-size: 20px;
+    }
+}

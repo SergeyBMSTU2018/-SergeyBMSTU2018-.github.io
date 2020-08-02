@@ -1,0 +1,124 @@
+.SingIn {
+    height: 160px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.SingInInner {
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    box-shadow: 14px 14px 28px rgba(0,0,0,0.25), 10px 10px 10px rgba(0,0,0,0.22);
+
+    height: 100%;
+    width: 17%;
+}
+
+.SingInHeaderText {
+    justify-content: center;
+    display: flex;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 30px;
+}
+
+.SingInErrorText {
+    justify-content: center;
+    display: none;
+
+    margin-bottom: 7px;
+
+    color: red;
+    font-size: 14px;
+}
+
+.SingInForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.InputSingIn {
+    height: 20px;
+    width: 85%;
+
+    margin-bottom: 8px;
+    
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+}
+
+input[type=email]:focus,
+input[type=password]:focus{
+    outline:none;
+    border: 2px solid rgb(175, 175, 175);
+}
+
+.SubmitButtonSingIn {
+    width: 130px;
+    height: 25px;
+
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(170, 170, 170);
+
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    cursor: pointer; 
+}
+
+.SubmitButtonSingIn:hover {
+    transition-duration: 0.2s;
+
+    background-color: rgb(200, 200, 200);
+    color: black;
+}
+
+@media only screen and (max-width: 1400px) {
+    .SingInInner {
+        width: 25%;
+    }
+
+    .SingInHeaderText {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .SingIn {
+        height: 150px;
+    }
+
+    .SingInInner {
+        width: 35%;
+    }
+
+    .SingInHeaderText {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .SingIn {
+        height: 145px;
+    }
+
+    .SingInErrorText {
+        font-size: 13px;
+    }
+
+    .SingInInner {
+        width: 70%;
+    }
+
+    .SingInHeaderText {
+        font-size: 20px;
+    }
+}
